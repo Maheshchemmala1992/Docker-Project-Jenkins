@@ -1,29 +1,30 @@
-vesrion: "3.8"
+version: "3.8"
+
 services:
-DEV-PAGE:
-   image: maheshmaha/dev-page:latest
-   ports:
-     - "81:80"
-   deploy:
-     replicas: 3
+  dev_page:
+    image: maheshmaha/dev-page:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
 
-TEST-PAGE:
-   image: maheshmaha/test-page:latest
-   ports:
-     - "82:80"
-   deploy:
-     replicas: 3
+  test_page:
+    image: maheshmaha/test-page:latest
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
 
-PRIPROD-PAGE:
-   image: maheshmaha/priprod-page:latest
-   ports:
-     - "83:80"
-   deploy:
-     replicas: 3
+  priprod_page:
+    image: maheshmaha/priprod-page:latest
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
 
-PROD-PAGE:
-   image: maheshmaha/prod-page:latest
-   ports:
-     - "84:80"
-   deploy:
-     replicas: 3
+  prod_page:
+    image: maheshmaha/prod-page:latest
+    ports:
+      - "84:80"
+    deploy:
+      replicas: 3
